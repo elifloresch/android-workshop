@@ -1,0 +1,132 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <!-- When using table row, each component defines a column, that's why on the first
+         TextView below we use span = 4, so that it takes the four columns that are defined
+         by each of the components in the rest of the TableRows -->
+    <TableRow
+        android:id="@+id/tableTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:gravity="center"
+            android:text="CiCOMP 2014"
+            android:textColor="#0000FF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="#FF909090" >
+    </View>
+
+    <TableRow
+        android:id="@+id/tableSubTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#99CCFF" >
+
+        <TextView
+            android:id="@+id/txtSubTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:gravity="center"
+            android:text="Talleres y ponencias"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/dataRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img11"
+            android:scaleType="centerInside"
+            android:src="@drawable/moon" 
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:gravity="center"
+            android:text="Busquedas Tecnologicas"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv13"
+            android:text="M.C. Gerardo Pastenes Ugalde"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv16"
+            android:gravity="center"
+            android:text="Sala A"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/dataRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#E0F0FF" >
+
+        <ImageView
+            android:id="@+id/img12"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv14"
+            android:gravity="center"
+            android:text="Diseno de Videojuegos"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv15"
+            android:text="L.C.C. Jorge Pena Ugalde"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv17"
+            android:gravity="center"
+            android:text="Sala B"
+            android:textColor="#000000"
+            android:textSize="9dp" >
+        </TextView>
+    </TableRow>
+
+</TableLayout>
