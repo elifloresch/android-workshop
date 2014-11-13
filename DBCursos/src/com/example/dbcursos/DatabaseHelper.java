@@ -11,7 +11,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String TABLE_NAME = "alumnos";
 	public static final String MATRICULA = "matricula";
 	public static final String ALUMNO = "nombre";
-	public static final String AL_EDAD = "edad";
+	public static final String AL_CORREO = "correo";
 	public static final String AL_DIR = "direccion";
 
 	public DatabaseHelper(Context context) {
@@ -21,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL("CREATE TABLE " + TABLE_NAME + " (" + MATRICULA
 				+ " INTEGER PRIMARY KEY NOT NULL," + ALUMNO + " TEXT NOT NULL,"
-				+ AL_EDAD + " TEXT NOT NULL," + AL_DIR + " TEXT NOT NULL);");
+				+ AL_CORREO + " TEXT NOT NULL," + AL_DIR + " TEXT NOT NULL);");
 	} // onCreate
 
 	@Override

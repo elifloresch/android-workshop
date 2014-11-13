@@ -1,110 +1,92 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dbcursos.MainActivity" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Name:" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:ems="10"
-        android:hint="Full name" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_gravity="center"
+        android:text="Alta de Alumno"
+        android:textSize="10pt" />
 
     <TextView
-        android:id="@+id/TextView01"
+        android:id="@+id/nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText1"
-        android:text="Age:" />
-
-    <EditText
-        android:id="@+id/EditText01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TextView01"
-        android:ems="10"
-        android:hint="Age" />
+        android:layout_marginLeft="1pt"
+        android:text="Datos del alumno"
+        android:textSize="5pt" />
 
     <TextView
-        android:id="@+id/TextView02"
+        android:id="@+id/matricula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/EditText01"
-        android:text="Address:" />
+        android:text="Matricula" />
 
     <EditText
-        android:id="@+id/EditText02"
+        android:id="@+id/eMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TextView02"
-        android:ems="10"
-        android:hint="Address" />
-    
+        android:text="Nombre" />
+
     <EditText
-        android:id="@+id/EditText03"
+        android:id="@+id/eNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TextView02"
-        android:ems="10"
-        android:hint="Matricula" />
-    
+        android:text="E-mail" />
+
+    <EditText
+        android:id="@+id/eCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion" />
+
+    <EditText
+        android:id="@+id/eDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+￼
+
         <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/EditText02"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="70dp"
-        android:layout_toRightOf="@+id/TextView02"
-        android:onClick="saveData"
-        android:text="Save" />
-        
-         <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/EditText02"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="70dp"
-        android:layout_toRightOf="@+id/TextView02"
-        android:onClick="saveData"
-        android:text="Report" />
-         
-            <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/EditText02"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="70dp"
-        android:layout_toRightOf="@+id/TextView02"
-        android:onClick="saveData"
-        android:text="Salir" />
+            android:id="@+id/agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/ralumnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporte" />
+
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir" />
+    </LinearLayout>
+
+</LinearLayout>

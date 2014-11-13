@@ -16,7 +16,7 @@ public class AlmacenarAlumno extends Activity {
 		if (extras != null) {
 			String eMatr = (String) extras.getString("matr").toString();
 			String eNombre = (String) extras.getString("nom").toString();
-			String eCorreo = (String) extras.getString("edad").toString();
+			String eCorreo = (String) extras.getString("corr").toString();
 			String eDireccion = (String) extras.getString("dir").toString();
 			agregarAlumno(eMatr, eNombre, eCorreo, eDireccion);
 			setResult(RESULT_OK, null);
@@ -34,7 +34,7 @@ public class AlmacenarAlumno extends Activity {
 		ContentValues cv = new ContentValues();
 		cv.put(DatabaseHelper.MATRICULA, matr);
 		cv.put(DatabaseHelper.ALUMNO, nom);
-		cv.put(DatabaseHelper.AL_EDAD, corr);
+		cv.put(DatabaseHelper.AL_CORREO, corr);
 		cv.put(DatabaseHelper.AL_DIR, dir);
 		db.insert("alumnos", DatabaseHelper.MATRICULA, cv);
 		db.close();
